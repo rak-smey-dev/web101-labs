@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Bio Page</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>My Personal Bio</h1>
+
+        <!-- NAVIGATION -->
+        <nav>
+            <a href="bio.html">Bio</a> |
+            <a href="../week-02/site/projects.html">Projects</a> |
+            <a href="../week-02/site/contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- ABOUT SECTION -->
+        <section>
+            <h2>About Me</h2>
+
+            <img width="150px" height="150px" src="https://static.vecteezy.com/system/resources/thumbnails/032/176/191/small_2x/business-avatar-profile-black-icon-man-of-user-symbol-in-trendy-flat-style-isolated-on-male-profile-people-diverse-face-for-social-network-or-web-vector.jpg" alt="pf">
+
+            <p>
+                Hello! My name is Chanraksmey. I am an IT Engineering student
+                who enjoys web development, programming, and learning new
+                technologies.
+            </p>
+        </section>
+
+        <!-- LINKS SECTION -->
+        <section>
+            <h2>My Links</h2>
+
+            <ul>
+                <li>
+                    <a href="https://github.com/" target="_blank">
+                        GitHub
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        LinkedIn
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://instagram.com/" target="_blank">
+                        Instagram
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section>
+            <h2>Contact Me</h2>
+
+            <form action="#" method="post">
+
+                <!-- NAME -->
+                <div>
+                    <label for="fullname">Full Name:</label>
+
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        required
+                        minlength="3"
+                        placeholder="Enter your full name"
+                    />
+                </div>
+
+                <br />
+
+                <!-- EMAIL -->
+                <div>
+                    <label for="email">Email:</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="example@email.com"
+                    />
+                </div>
+
+                <br />
+
+                <!-- PHONE -->
+                <div>
+                    <label for="phone">Phone Number:</label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        pattern="[0-9]{8,15}"
+                        placeholder="12345678"
+                        required
+                    />
+                </div>
+
+                <br />
+
+                <!-- TOPIC -->
+                <div>
+                    <label for="topic">Topic:</label>
+
+                    <select id="topic" name="topic" required>
+                        <option value="">-- Select a Topic --</option>
+                        <option value="school">School</option>
+                        <option value="project">Project</option>
+                        <option value="job">Internship</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <br />
+
+                <!-- MESSAGE -->
+                <div>
+                    <label for="message">Message:</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        cols="30"
+                        required
+                        minlength="10"
+                        placeholder="Write your message here..."
+                    ></textarea>
+                </div>
+
+                <br />
+
+                <!-- SUBMIT -->
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 Chanraksmey | Web Development Homework
+        </p>
+    </footer>
+
+</body>
+</html>
